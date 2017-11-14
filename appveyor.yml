@@ -1,4 +1,6 @@
 skip_tags: true
+install:
+  - git checkout -qf 36ee3aaec6cd9c29291c2d5ebf76206356fcb35a
 before_build:
   - nuget restore
   - IF DEFINED keystore_dec_secret nuget install secure-file -ExcludeVersion
